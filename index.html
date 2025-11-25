@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Mi Tiendita</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Mi Tiendita</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#novios">Novios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#bautizo">Bautizo</a></li>
+          <li class="nav-item"><a class="nav-link" href="#graduacion">Graduación</a></li>
+          <li class="nav-item"><a class="nav-link" href="#babyshower">Baby Shower</a></li>
+          <li class="nav-item"><a class="nav-link" href="carro.html">Carro <span id="carroCount" class="badge bg-danger">0</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contáctanos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <!-- Home -->
+    <section id="home" class="container my-5">
+      <div class="text-center">
+        <h1>Bienvenido a Mi Tiendita</h1>
+        <p>Encuentra el regalo perfecto para cada ocasión especial.</p>
+      </div>
+    </section>
+
+    <!-- Novios -->
+    <section id="novios" class="my-5" style="margin-top: 70px">
+      <h2 class="text-center mb-4">Novios</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card h-100">
+            <img src="assets/img/novios.jpg"  class="card-img-top w-100 object-fit-scale" 
+       style="height:200px;"alt="Regalos personalizados para novios" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Regalos personalizados</h5>
+              <p class="card-text">$30.000</p>
+              <a href="productos.html?id=1" class="btn btn-primary">Ver más</a>
+              <button class="btn btn-success comprar" data-id="1">Comprar</button> <!-- se agrega data-id para guardar el id del producto, es fijo porque cada id representa a un producto y cada id conecta con un producto distinto del catalogo-->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100">
+            <img src="assets/img/copas.jpg"  class="card-img-top w-100 object-fit-scale" 
+       style="height:200px;" alt="Copas personalizadas" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Copas personalizadas</h5>
+              <p class="card-text">$25.000</p>
+              <a href="productos.html?id=2" class="btn btn-primary">Ver más</a>
+              <button class="btn btn-success comprar" data-id="2">Comprar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bautizo -->
+    <section id="bautizo" class="my-5">
+      <h2 class="text-center mb-4">Bautizo</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card h-100">
+            <img src="assets/img/bautizoo.jpg"  class="card-img-top w-100 object-fit-scale" 
+       style="height:200px;" alt="Recuerdo para padrino" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Recuerdos para el padrino</h5>
+              <p class="card-text">$30.000</p>
+              <a href="productos.html?id=3" class="btn btn-primary">Ver más</a>
+              <button class="btn btn-success comprar" data-id="3">Comprar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100">
+            <img src="assets/img/madrina.jpg"  class="card-img-top w-100 object-fit-scale" 
+       style="height:200px;"alt="Regalo para madrina" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Regalo para madrina</h5>
+              <p class="card-text">$30.000</p>
+              <a href="productos.html?id=4" class="btn btn-primary">Ver más</a>
+              <button class="btn btn-success comprar" data-id="4">Comprar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Graduación -->
+    <section id="graduacion" class="my-5">
+      <h2 class="text-center mb-4">Graduación</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card h-100">
+            <img src="assets/img/pareja.jpg"  class="card-img-top w-100 object-fit-scale" 
+       style="height:200px;"alt="Pareja de graduados" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Pareja de graduados</h5>
+              <p class="card-text">$30.000</p>
+              <a href="productos.html?id=5" class="btn btn-primary">Ver más</a>
+              <button class="btn btn-success comprar" data-id="5">Comprar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100">
+            <img src="assets/img/osolicenciado.jpg"  class="card-img-top w-100 object-fit-scale" 
+       style="height:200px;"alt="Recuerdo de graduación" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Recuerdo de graduación</h5>
+              <p class="card-text">$30.000</p>
+              <a href="productos.html?id=6" class="btn btn-primary">Ver más</a>
+              <button class="btn btn-success comprar" data-id="6">Comprar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Babyshower -->
+    <section id="babyshower" class="my-5">
+      <h2 class="text-center mb-4">Babyshower</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card h-100">
+            <img src="assets/img/babys.jpg"  class="card-img-top w-100 object-fit-scale" 
+       style="height:200px;"alt="Regalo para bebé" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Regalo para bebé</h5>
+              <p class="card-text">$30.000</p>
+              <a href="productos.html?id=7" class="btn btn-primary">Ver más</a>
+              <button class="btn btn-success comprar" data-id="7">Comprar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100">
+            <img src="assets/img/babysw.jpg"  class="card-img-top w-100 object-fit-scale" 
+       style="height:200px;"alt="Regalo para babyshower" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Regalo para babyshower</h5>
+              <p class="card-text">$30.000</p>
+              <a href="productos.html?id=8" class="btn btn-primary">Ver más</a>
+              <button class="btn btn-success comprar" data-id="8">Comprar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="bg-dark text-white text-center py-3 mt-5">
+    <p>© 2025 Mi Tiendita</p>
+    <p>Contacto: contacto@tiendita.com</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/script.js"></script></body>
+
+</html>
